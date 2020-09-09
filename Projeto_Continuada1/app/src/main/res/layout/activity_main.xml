@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculo Brasileirão"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:id="@+id/tv_topo"
+        />
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="Nome do time"
+    android:textSize="30sp"
+    app:layout_constraintTop_toBottomOf="@+id/tv_topo"
+    android:id="@+id/ed_time"
+    android:inputType="text"
+    android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de vitorias"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_time"
+        android:id="@+id/ed_vitorias"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de empates"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_vitorias"
+        android:id="@+id/ed_empates"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de derrotas"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/ed_empates"
+        android:id="@+id/ed_derrotas"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Calculo"
+        android:textSize="30sp"
+        android:id="@+id/bt_01"
+        app:layout_constraintTop_toBottomOf="@+id/ed_derrotas"
+        android:onClick="calculo"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
